@@ -7,10 +7,10 @@ async function obtener_usuarios(){
     let items=[]
     usuarios_definitivos.forEach(element => {
 
-        let item=` <li class="list-group-item">${element,username}</li>`
-        item.push(item)
+        let item=` <li class="list-group-item">${element.username}</li>`
+        items.push(item)
 
     });
     document.getElementById("lista_usuarios").innerHTML=items.join("")
 }
-obtener_usuarios
+obtener_usuarios()
